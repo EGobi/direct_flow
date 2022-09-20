@@ -15,7 +15,7 @@ capture program drop direct_flow
 
 program define direct_flow
 
-version 17
+* version 17
 
 syntax [if] [in] [, model(string) n_databases(string) n_other_sources(string) n_duplicates(string) n_after_duplicates(string) n_first_phase(string) n_excluded_first_phase(string) n_second_phase(string) n_excluded_second_phase(string) n_awaiting_classification(string) n_included_reports(string) n_included_studies(string) n_included_completed(string) n_included_ongoing(string) n_included_qualitative(string) n_included_quantitative(string) language(string) *]
 
@@ -1442,5 +1442,6 @@ syntax [if] [in] [, model(string) n_databases(string) n_other_sources(string) n_
 
 	}
 
+graph export "scatter.pdf"
 
 end
